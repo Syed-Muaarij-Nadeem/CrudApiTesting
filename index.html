@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Hotel Employee Management Dashboard</h1>
+        </header>
+
+        <main class="content">
+            <!-- Form for Adding/Updating Employee Information -->
+            <section class="form-section">
+                <h2>Employee Information</h2>
+                <form id="employeeForm" class="form-card">
+                    <input type="hidden" id="employeeId">
+                    <div class="form-group">
+                        <label for="name">Employee Name:</label>
+                        <input type="text" id="name" placeholder="Enter employee name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" placeholder="Enter employee address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation:</label>
+                        <input type="text" id="designation" placeholder="Enter employee designation" required>
+                    </div>
+                    <button type="submit" class="btn-success">Save</button>
+                    <button type="reset" class="btn-info">Reset</button>
+                </form>
+            </section>
+
+            <!-- Employee List Section -->
+            <section class="list-section">
+                <h2>Employee List</h2>
+                <ul id="employeeList" class="employee-list"></ul>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
